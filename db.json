@@ -1,0 +1,454 @@
+{
+  "savecity": [
+    {
+      "coord": {
+        "lon": 76.0667,
+        "lat": 11.0667
+      },
+      "weather": [
+        {
+          "id": 721,
+          "main": "Haze",
+          "description": "haze",
+          "icon": "50n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 302.24,
+        "feels_like": 304.5,
+        "temp_min": 302.24,
+        "temp_max": 302.24,
+        "pressure": 1009,
+        "humidity": 61
+      },
+      "visibility": 5000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 250
+      },
+      "clouds": {
+        "all": 20
+      },
+      "dt": 1700051353,
+      "sys": {
+        "type": 1,
+        "id": 9209,
+        "country": "IN",
+        "sunrise": 1700009498,
+        "sunset": 1700051342
+      },
+      "timezone": 19800,
+      "id": 1264154,
+      "name": "Malappuram",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 75.9252,
+        "lat": 10.767
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 301.77,
+        "feels_like": 305.23,
+        "temp_min": 301.77,
+        "temp_max": 301.77,
+        "pressure": 1010,
+        "humidity": 71,
+        "sea_level": 1010,
+        "grnd_level": 1010
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 1.35,
+        "deg": 271,
+        "gust": 1.47
+      },
+      "clouds": {
+        "all": 100
+      },
+      "dt": 1700053745,
+      "sys": {
+        "type": 1,
+        "id": 9209,
+        "country": "IN",
+        "sunrise": 1700009508,
+        "sunset": 1700051400
+      },
+      "timezone": 19800,
+      "id": 1259411,
+      "name": "Ponnāni",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 76.2602,
+        "lat": 9.9399
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 304.14,
+        "feels_like": 310.13,
+        "temp_min": 303.16,
+        "temp_max": 304.14,
+        "pressure": 1013,
+        "humidity": 68,
+        "sea_level": 1013,
+        "grnd_level": 1012
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 1.07,
+        "deg": 142,
+        "gust": 1.42
+      },
+      "clouds": {
+        "all": 89
+      },
+      "dt": 1700110150,
+      "sys": {
+        "type": 1,
+        "id": 9211,
+        "country": "IN",
+        "sunrise": 1700095782,
+        "sunset": 1700137786
+      },
+      "timezone": 19800,
+      "id": 1273874,
+      "name": "Kochi",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 174,
+        "lat": -42
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 289.94,
+        "feels_like": 289.29,
+        "temp_min": 289.94,
+        "temp_max": 289.94,
+        "pressure": 1006,
+        "humidity": 62,
+        "sea_level": 1006,
+        "grnd_level": 1004
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 1.69,
+        "deg": 202,
+        "gust": 2.3
+      },
+      "clouds": {
+        "all": 73
+      },
+      "dt": 1700110335,
+      "sys": {
+        "country": "NZ",
+        "sunrise": 1700067209,
+        "sunset": 1700119438
+      },
+      "timezone": 46800,
+      "id": 2186224,
+      "name": "New Zealand",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 76.7,
+        "lat": 11.4
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 290.52,
+        "feels_like": 290.06,
+        "temp_min": 290.52,
+        "temp_max": 290.52,
+        "pressure": 1016,
+        "humidity": 67,
+        "sea_level": 1016,
+        "grnd_level": 786
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 1.47,
+        "deg": 71,
+        "gust": 2.01
+      },
+      "clouds": {
+        "all": 84
+      },
+      "dt": 1700110377,
+      "sys": {
+        "country": "IN",
+        "sunrise": 1700095798,
+        "sunset": 1700137560
+      },
+      "timezone": 19800,
+      "id": 1253993,
+      "name": "Ooty",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 77.4833,
+        "lat": 10.2333
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 287.56,
+        "feels_like": 287.33,
+        "temp_min": 287.56,
+        "temp_max": 287.56,
+        "pressure": 1016,
+        "humidity": 87,
+        "sea_level": 1016,
+        "grnd_level": 797
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 1,
+        "deg": 350,
+        "gust": 1.59
+      },
+      "clouds": {
+        "all": 100
+      },
+      "dt": 1700110465,
+      "sys": {
+        "country": "IN",
+        "sunrise": 1700095513,
+        "sunset": 1700137469
+      },
+      "timezone": 19800,
+      "id": 1266425,
+      "name": "Kodaikānāl",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 75.9667,
+        "lat": 11.15
+      },
+      "weather": [
+        {
+          "id": 701,
+          "main": "Mist",
+          "description": "mist",
+          "icon": "50d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 300.43,
+        "feels_like": 303.3,
+        "temp_min": 300.43,
+        "temp_max": 300.43,
+        "pressure": 1013,
+        "humidity": 78
+      },
+      "visibility": 3000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 70
+      },
+      "clouds": {
+        "all": 75
+      },
+      "dt": 1700110672,
+      "sys": {
+        "type": 1,
+        "id": 9209,
+        "country": "IN",
+        "sunrise": 1700095953,
+        "sunset": 1700137756
+      },
+      "timezone": 19800,
+      "id": 1266200,
+      "name": "Kondotty",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 75.9869,
+        "lat": 11.0515
+      },
+      "weather": [
+        {
+          "id": 701,
+          "main": "Mist",
+          "description": "mist",
+          "icon": "50d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 301.3,
+        "feels_like": 305.31,
+        "temp_min": 301.3,
+        "temp_max": 301.3,
+        "pressure": 1013,
+        "humidity": 78
+      },
+      "visibility": 5000,
+      "wind": {
+        "speed": 1.03,
+        "deg": 70
+      },
+      "clouds": {
+        "all": 75
+      },
+      "dt": 1700112684,
+      "sys": {
+        "type": 1,
+        "id": 9209,
+        "country": "IN",
+        "sunrise": 1700095940,
+        "sunset": 1700137760
+      },
+      "timezone": 19800,
+      "id": 1263694,
+      "name": "Vengara",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 76.65,
+        "lat": 10.7833
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 303.33,
+        "feels_like": 306.97,
+        "temp_min": 303.33,
+        "temp_max": 303.33,
+        "pressure": 1013,
+        "humidity": 63,
+        "sea_level": 1013,
+        "grnd_level": 1003
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 3.71,
+        "deg": 87,
+        "gust": 4.65
+      },
+      "clouds": {
+        "all": 99
+      },
+      "dt": 1700113067,
+      "sys": {
+        "country": "IN",
+        "sunrise": 1700095758,
+        "sunset": 1700137623
+      },
+      "timezone": 19800,
+      "id": 1260728,
+      "name": "Palakkad",
+      "cod": 200
+    },
+    {
+      "coord": {
+        "lon": 75.8927,
+        "lat": 11.1534
+      },
+      "weather": [
+        {
+          "id": 721,
+          "main": "Haze",
+          "description": "haze",
+          "icon": "50d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 302.26,
+        "feels_like": 306.12,
+        "temp_min": 302.26,
+        "temp_max": 302.26,
+        "pressure": 1012,
+        "humidity": 70
+      },
+      "visibility": 5000,
+      "wind": {
+        "speed": 1.03,
+        "deg": 70
+      },
+      "clouds": {
+        "all": 75
+      },
+      "dt": 1700113902,
+      "sys": {
+        "type": 1,
+        "id": 9209,
+        "country": "IN",
+        "sunrise": 1700095971,
+        "sunset": 1700137774
+      },
+      "timezone": 19800,
+      "id": 1265873,
+      "name": "Kakkancheri",
+      "cod": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

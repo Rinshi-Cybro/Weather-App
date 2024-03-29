@@ -1,0 +1,135 @@
+
+<div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="row card0">
+            <div class="card1 col-lg-8 col-md-7">
+                <h4>Welcome to Weather Forecast</h4>
+                <div class="text-center">
+                    <img class="image mt-5" src="https://i.imgur.com/M8VyA2h.png">
+                </div>
+
+                <div class="row px-3 mt-3 mb-3" *ngIf="weatherData">
+                    <h1 class="large-font mr-3 " *ngIf="tempShow"> {{weatherData?.main.temp-273.15 | number:'1.1-1' }}°C </h1>
+                    <h1 class="large-font mr-3" *ngIf="!tempShow">{{(weatherData?.main.temp-273.15)*9/5+32 | number:'1.1-1' }}°F</h1>
+                    <div>
+                        <button class="btn btn-outline-secondary mt-1 mb-2" *ngIf="tempShow" (click)="toggle()">In Fahrenheit</button>
+                        <button class="btn btn-outline-secondary mt-1 mb-2" *ngIf="!tempShow" (click)="toggle()">In Degree Celsius</button>
+                    </div>
+
+                    <div class="d-flex flex-column mr-3">
+                        <h2 class="mt-3 mb-0">{{weatherData?.name|uppercase}},{{weatherData?.sys.country}} </h2>
+                        <small><b>{{ weatherData?.dt * 1000 | date: 'fullDate'}}</b></small>
+                    </div>
+
+                    <!-- <div class="d-flex flex-column text-center align-items-center"> -->
+                    <div class="d-flex justify-content-around">
+                        <div class="d-flex flex-column">
+                            <img src="https://openweathermap.org/img/wn/{{ weatherData?.weather[0]?.icon }}@2x.png" alt="Weather Icon" style="height: 90px; width: 90px;">
+                            <small style="margin-top: -20px; margin-left: 23px;"><b>{{weatherData?.weather[0].main}}</b></small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img src="..\..\assets\sunrise (1).png" alt="Weather Icon" style="height: 70px; width: 70px;">
+                            <small style="margin-left: -30px;"><b>Sunrise: {{weatherData?.sys.sunrise*1000 | date : 'hh:mm'}} AM</b></small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img src="..\..\assets\sunset.png" alt="Weather Icon" style="height: 70px; width: 70px;">
+                            <small style="margin-left: -31px;"><b>Sunset: {{weatherData?.sys.sunset*1000 | date : 'hh:mm'}} PM</b></small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card2 col-lg-4 col-md-5">
+
+                <div class="row px-3">
+                    <div class="weather-form">
+                        <input type="text" name="city" placeholder="Another City" [(ngModel)]="city" class="mb-5"
+                            id="exampleFormControlInput1">
+                        <div (click)="getCityWeather()" class="fa fa-search mb-5 mr-0 text-center"></div>
+                    </div>
+                </div>
+
+                <div class="mr-6" *ngIf="weatherData">
+                    <!-- <p class="light-text suggestion">Birmingham</p>
+                    <p class="light-text suggestion">Manchester</p>
+                    <p class="light-text suggestion">New York</p>
+                    <p class="light-text suggestion">California</p>
+
+                    <div class="line my-5"></div> -->
+
+                    <h5><b>Weather Details</b></h5><br>
+                    <div class="row px-3">
+                        <p class="text-light"><b>Cloudy</b></p>
+                        <p class="ml-auto"><b>{{weatherData?.clouds.all}}%</b></p>
+                    </div>
+
+                    <div class="row px-3">
+                        <p class="text-light"><b>Humidity</b></p>
+                        <p class="ml-auto"><b>{{weatherData?.main.humidity}}%</b></p>
+                    </div>
+
+                    <div class="row px-3">
+                        <p class="text-light"><b>Wind</b></p>
+                        <p class="ml-auto"><b>{{ weatherData?.wind.speed }} km/h</b></p>
+                    </div>
+
+                    <div class="row px-3">
+                        <p class="text-light"><b>Pressure</b></p>
+                        <p class="ml-auto"><b>{{ weatherData?.main.pressure }} hPa</b></p>
+                    </div>
+
+                    <div class="row px-3">
+                        <p class="text-light"><b>Description</b></p>
+                        <p class="ml-auto"><b>Feels Like {{ weatherData?.main.feels_like-273.15 |number:'1.1-1' }} °C ,
+                                {{ weatherData?.weather[0].description }}</b></p>
+                    </div><br>
+
+                    <!-- <div class="row px-3">
+                        <p class="text-light"><b>Rain</b></p>
+                        <p class="ml-auto"><b>{{weatherData?.rain}} mm</b></p>
+                    </div> -->
+
+                    <div class="line mt-3"></div>
+                    <div style="text-align: center; margin-top: 60px;">
+                        <button class="btn btn-info" *ngIf="saveButton&&weatherData" (click)="saveCity()">Save
+                            City</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="error-message" style="text-align: center;color: red;" *ngIf="error&&!weatherData"><b>{{ error }}</b></div>
+
+
+
+
+
+
+
+
+
+<!----- bootstrap card ------>
+<!-- <div class="mycontainer">
+    <div class="card text-bg-secondary mb-3" style="max-width: 35rem;">
+        <div class="card-header">Welcome to Weather Forecast</div>
+        <div class="card-body">
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- <div>
+    <p>Calculation Time: {{ weatherData.dt * 1000 | date: 'medium' }}</p>
+    <p>Sunrise Time: {{ weatherData.sys.sunrise * 1000 | date: 'medium' }}</p>
+    <p>Sunset Time: {{ weatherData.sys.sunset * 1000 | date: 'medium' }}</p>
+    <p>Calculation Time (full date): {{ weatherData.dt * 1000 | date: 'fullDate' }}</p>
+    <p>Calculation Time (short): {{ weatherData.dt * 1000 | date: 'short' }}</p>
+    <p>Calculation Time (custom format): {{ weatherData.dt * 1000 | date: 'yyyy-MM-dd HH:mm:ss' }}</p>
+  </div> -->

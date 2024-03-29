@@ -1,0 +1,25 @@
+
+<div class="table_container  mt-5">
+    <h2 class=" text-color-black text-center">Saved Cityes</h2><br>
+    <table class="table table-striped table-hover table table-bordered">
+        <thead >
+            <tr>
+                <th class="text-center">Place</th>
+                <th class="text-center">Temperature</th>
+                <th class="text-center">Description</th>
+                <th class="text-center">Humidity</th> 
+                <th class="text-center">Pressure</th> 
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let city of data">
+                <td class="text-center">{{city.name}}</td>
+                <td class="text-center" [ngClass]="(city.main.temp-273.15)>=29?'red':'black'">{{city.main.temp-273.15|number: '1.1-1'}}°C</td>
+                <td class="text-center">Feels Like {{city.main.feels_like-273.15|number: '1.1-1'}}°C,{{city.weather[0].description}}</td>
+                <td class="text-center">{{city.main.humidity}}%</td>
+                <td class="text-center">{{city.main.pressure}}hPa</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
